@@ -1,9 +1,11 @@
 import "./health.css"
-import {Notifications, Person} from "@material-ui/icons";
+import {Notifications, Person, Home} from "@material-ui/icons";
 import WhatshotIcon from '@material-ui/icons/Whatshot';
 import DirectionsWalkIcon from '@material-ui/icons/DirectionsWalk';
 import NightsStayIcon from '@material-ui/icons/NightsStay';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
+import RedeemIcon from '@material-ui/icons/Redeem';
+import AirportShuttleIcon from '@material-ui/icons/AirportShuttle';
 
 export default function health() {
     return (
@@ -41,13 +43,9 @@ export default function health() {
                </div>
 
                 <section className="flex flex-row justify-center p-4">
-                        
-                        <div className="">
-                            <p className="text-center">Today</p>
-                        
-                        </div>
-                        
-
+                    <div>
+                        <p className="text-center">Today</p>      
+                    </div>
                 </section>
                
                
@@ -80,18 +78,16 @@ export default function health() {
                         <p>4Hr55</p>
                         <p>Minutes</p>
                     </div>
-
-
                 </div>
+
+
 
                 <div className="flex flex-row justify-center">
                     <p>More <span className="arrow"><ArrowForwardIosIcon style={{fontSize : 10}}/></span> </p>
                 </div>
                 <p>Services</p>
 
-                <section className="bg-blue-100 bg-opacity-50 p-5 mt-6">
-                    
-
+                <section className="bg-blue-100 bg-opacity-50 p-8 mt-6">
                     <div className="flex flex-col justify-center gap-y-4">
                         <div className="bg-white shadow-2xl flex flex-row p-5">
                             <div className="bg-blue-400 rounded-full px-1 py-1 bg-opacity-80">
@@ -105,31 +101,49 @@ export default function health() {
 
                         <div className="bg-white shadow-2xl flex flex-row p-5">
                             <div className="bg-blue-400 rounded-full px-1 py-1 bg-opacity-80">
-                                    <Person/>
+                                    <RedeemIcon/>
                                 </div>
                                 <div className="pl-7">
-                                    <p>Get Checked</p>
-                                    <p className="text">Take the virtual assessment</p>
+                                    <p>See a Doctor</p>
+                                    <p className="text">Book an appointment</p>
                                 </div>
                         </div>
 
 
                         <div className="bg-white shadow-2xl flex flex-row p-5">
                             <div className="bg-blue-400 rounded-full px-1 py-1 bg-opacity-80">
-                                    <Person/>
+                                    <AirportShuttleIcon/>
                                 </div>
                                 <div className="pl-7">
-                                    <p>Get Checked</p>
-                                    <p className="text">Take the virtual assessment</p>
+                                    <p>Report  Emergency</p>
+                                    <p className="text">Tap twice to alert the hospital </p>
                                 </div>
-                        </div>
+                        </div> 
+                    </div>
+                </section>
 
 
-                       
+                <section className="flex flex-row justify-around mt-16">
+                    <div className="flex flex-col">
+                        <Home/>
+                        <p>HOME</p>
+                    </div>
+                    
+                    <div className="flex flex-col">
+                        <Home/>
+                        <p>TRACK</p>
                     </div>
 
+                    <div className="flex flex-col">
+                        <Home/>
+                        <p>ACCOUNT</p>
+                    </div>
+                    
 
                 </section>
+
+
+
                 
 
                  
