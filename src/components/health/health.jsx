@@ -1,8 +1,9 @@
 import "./health.css"
-import {Notifications, Fire} from "@material-ui/icons";
+import {Notifications, Person} from "@material-ui/icons";
 import WhatshotIcon from '@material-ui/icons/Whatshot';
 import DirectionsWalkIcon from '@material-ui/icons/DirectionsWalk';
 import NightsStayIcon from '@material-ui/icons/NightsStay';
+import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 
 export default function health() {
     return (
@@ -29,13 +30,16 @@ export default function health() {
             <div className="content">
             <div className="shadow-2xl bg-white p-10 rounded-lg">
                 <span className="float-left">
-                    <h1 className="text-blue-700">meck</h1>
+                    <h1 className="text-blue-700 font-semibold">meck</h1>
                 </span>
 
                 <span className="float-right ml-52">
                     <Notifications/>   
                 </span>
-                <p className="text-center p-2.5">Today</p>
+                <div className="flex flex-row justify-center text-center p-4">
+                    <p className="text-small">Today</p>
+                </div>
+                
                 <div className="flex flex-row justify-around">
                     <div className="calories">
                         <WhatshotIcon/> 
@@ -64,8 +68,61 @@ export default function health() {
                         <p>Minutes</p>
                     </div>
 
+
                 </div>
+
+                <div className="flex flex-row justify-center">
+                    <p>More <span className="arrow"><ArrowForwardIosIcon style={{fontSize : 10}}/></span> </p>
+                </div>
+                <p>Services</p>
+
+                <section className="bg-blue-100 bg-opacity-50 p-5 mt-6">
+                    
+
+                    <div className="flex flex-col justify-center gap-y-4">
+                        <div className="bg-white shadow-2xl flex flex-row p-5">
+                            <div className="bg-blue-400 rounded-full px-1 py-1 bg-opacity-80">
+                                <Person/>
+                            </div>
+                            <div className="pl-7">
+                                <p>Get Checked</p> 
+                                <p className="text">Take the virtual assessment</p>
+                            </div>
+                        </div>
+
+                        <div className="bg-white shadow-2xl flex flex-row p-5">
+                            <div className="bg-blue-400 rounded-full px-1 py-1 bg-opacity-80">
+                                    <Person/>
+                                </div>
+                                <div className="pl-7">
+                                    <p>Get Checked</p>
+                                    <p className="text">Take the virtual assessment</p>
+                                </div>
+                        </div>
+
+
+                        <div className="bg-white shadow-2xl flex flex-row p-5">
+                            <div className="bg-blue-400 rounded-full px-1 py-1 bg-opacity-80">
+                                    <Person/>
+                                </div>
+                                <div className="pl-7">
+                                    <p>Get Checked</p>
+                                    <p className="text">Take the virtual assessment</p>
+                                </div>
+                        </div>
+
+
+                       
+                    </div>
+
+
+                </section>
+                
+
+                 
             </div>
+
+
             <div>
                 <h1>meck</h1>
             </div>
