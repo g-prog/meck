@@ -1,5 +1,5 @@
 import "./health.css"
-import {Notifications, Person, Home} from "@material-ui/icons";
+import {Notifications, Person, Home, Watch} from "@material-ui/icons";
 import WhatshotIcon from '@material-ui/icons/Whatshot';
 import DirectionsWalkIcon from '@material-ui/icons/DirectionsWalk';
 import NightsStayIcon from '@material-ui/icons/NightsStay';
@@ -67,23 +67,23 @@ export default function health() {
                 <div className="flex flex-row justify-around">
                     <div className="py-2">
                         <p>213</p>
-                        <p>Cals</p>
+                        <p className="text-gray-400">Cals</p>
                     </div>
 
                     <div className="py-2">
-                        <p>5,022</p>
-                        <p>Steps</p>
+                        <p >5,022</p>
+                        <p className="text-gray-400">Steps</p>
                     </div>
                     <div className="py-2 text-center">
                         <p>4Hr55</p>
-                        <p>Minutes</p>
+                        <p className="text-gray-400">Minutes</p>
                     </div>
                 </div>
 
 
 
                 <div className="flex flex-row justify-center">
-                    <p>More <span className="arrow"><ArrowForwardIosIcon style={{fontSize : 10}}/></span> </p>
+                    <p className="text-gray-500">More <span className="arrow"><ArrowForwardIosIcon style={{fontSize : 10}}/></span> </p>
                 </div>
                 <p>Services</p>
 
@@ -91,32 +91,32 @@ export default function health() {
                     <div className="flex flex-col justify-center gap-y-4">
                         <div className="bg-white shadow-2xl flex flex-row p-5">
                             <div className="bg-blue-400 rounded-full px-1 py-1 bg-opacity-80">
-                                <Person/>
+                                <Person style={{color: "blue"}}/>
                             </div>
                             <div className="pl-7">
                                 <p>Get Checked</p> 
-                                <p className="text">Take the virtual assessment</p>
+                                <p className="text-xs text-gray-400">Take the virtual assessment</p>
                             </div>
                         </div>
 
                         <div className="bg-white shadow-2xl flex flex-row p-5">
                             <div className="bg-blue-400 rounded-full px-1 py-1 bg-opacity-80">
-                                    <RedeemIcon/>
+                                    <RedeemIcon style={{color: "blue"}}/>
                                 </div>
                                 <div className="pl-7">
                                     <p>See a Doctor</p>
-                                    <p className="text">Book an appointment</p>
+                                    <p className="text-xs text-gray-400">Book an appointment</p>
                                 </div>
                         </div>
 
 
                         <div className="bg-white shadow-2xl flex flex-row p-5">
                             <div className="bg-blue-400 rounded-full px-1 py-1 bg-opacity-80">
-                                    <AirportShuttleIcon/>
+                                    <AirportShuttleIcon style={{color: "red"}}/>
                                 </div>
                                 <div className="pl-7">
                                     <p>Report  Emergency</p>
-                                    <p className="text">Tap twice to alert the hospital </p>
+                                    <p className="text-xs text-gray-400">Tap twice to alert the hospital </p>
                                 </div>
                         </div> 
                     </div>
@@ -125,18 +125,19 @@ export default function health() {
 
                 <section className="flex flex-row justify-around mt-16">
                     <div className="flex flex-col">
-                        <Home/>
-                        <p>HOME</p>
+                        <Home style={{color: "blue"}} />
+                        <p className="text-base text-gray-400">HOME</p>
                     </div>
                     
                     <div className="flex flex-col">
-                        <Home/>
-                        <p>TRACK</p>
+                        <Watch style={{color: "gray"}} />
+                        <p className="text-base text-gray-400">TRACK</p>
                     </div>
 
                     <div className="flex flex-col">
-                        <Home/>
-                        <p>ACCOUNT</p>
+                        <img className="profile"
+                        src="assets/skin.jpg"/>
+                        <p className="text-base text-gray-400">ACCOUNT</p>
                     </div>
                     
 

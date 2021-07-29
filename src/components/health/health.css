@@ -47,3 +47,9 @@
 .text{
     font-size: 0.7em;
 }
+
+.profile{
+    width: 35px;
+    height: 25px;
+    border-radius: 50%;
+}
