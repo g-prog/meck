@@ -29,22 +29,35 @@ export default function health() {
 
             <div className="content">
             <div className="shadow-2xl bg-white p-10 rounded-lg">
-                <span className="float-left">
-                    <h1 className="text-blue-700 font-semibold">meck</h1>
-                </span>
+               <div className="flex flex-row justify-between">
+                    <div>
+                        <h1 className="text-blue-700 font-semibold">meck</h1>
+                    </div>
 
-                <span className="float-right ml-52">
-                    <Notifications/>   
-                </span>
-                <div className="flex flex-row justify-center text-center p-4">
-                    <p className="text-small">Today</p>
-                </div>
+                    <div>
+                        <Notifications/>   
+                    </div>
+
+               </div>
+
+                <section className="flex flex-row justify-center p-4">
+                        
+                        <div className="">
+                            <p className="text-center">Today</p>
+                        
+                        </div>
+                        
+
+                </section>
+               
+               
                 
                 <div className="flex flex-row justify-around">
                     <div className="calories">
                         <WhatshotIcon/> 
                     </div>
                     <div className="steps">
+    
                         <DirectionsWalkIcon/>
 
                     </div>
