@@ -11,7 +11,7 @@ import Box from '@material-ui/core/Box'
 
 export default function health() {
     return (
-        <div className="bg-white shadow-2xl ">
+        <div className="bg-white shadow-2xl">
             <div className="p-12">
                 <h2 className="text-center font-medium">HOW TO REPORT AN EMERGENCY</h2>
 
@@ -36,7 +36,7 @@ export default function health() {
             
 
             <div className="content">
-            <div className="shadow-2xl bg-white p-6 rounded-lg">
+            <div className="shadow-2xl bg-white p-6 rounded-lg ">
                <div className="flex flex-row justify-between">
                     <div>
                         <h1 className="text-blue-600 text-xl">meck</h1>
@@ -175,7 +175,7 @@ export default function health() {
 
 
 
-            <div className="shadow-2xl bg-white p-6 rounded-lg">
+            <div className="shadow-2xl bg-white p-6 rounded-lg mt-44 md:mt-0">
                <div className="flex flex-row justify-between">
                     <div>
                         <h1 className="text-blue-600 text-xl">meck</h1>
@@ -299,7 +299,7 @@ export default function health() {
 
              
 
-            <div className="shadow-2xl bg-white p-6 rounded-lg">
+            <div className="shadow-2xl bg-white p-6 rounded-lg mt-44 md:mt-0">
                <div className="flex flex-row justify-between">
                     <div>
                         <h1 className="text-blue-600 text-xl">meck</h1>
