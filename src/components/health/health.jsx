@@ -95,7 +95,7 @@ export default function health() {
                 <section className="bg-blue-100 bg-opacity-50 p-8 pb-24 mt-6">
                     <div className="flex flex-col justify-center gap-y-4">
                         <div className="bg-white shadow-2xl flex flex-row p-5 rounded-lg">
-                            <div className="bg-blue-400 rounded-full px-1 py-1 bg-opacity-80">
+                            <div className="bg-blue-400 xs:rounded-sm md:rounded-full xs:pt-4 md:pt-2 px-1 py-1 bg-opacity-80">
                                 <Person style={{color: "blue"}}/>
                             </div>
                             <div className="pl-7">
@@ -105,7 +105,7 @@ export default function health() {
                         </div>
 
                         <div className="bg-white shadow-2xl flex flex-row p-5 rounded-lg">
-                                <div className="bg-blue-400 rounded-full px-1 py-1 bg-opacity-80">
+                                <div className="bg-blue-400 xs:rounded-sm md:rounded-full  px-1 py-1 bg-opacity-80">
                                     <RedeemIcon style={{color: "blue"}}/>
                                 </div>
 
@@ -117,7 +117,7 @@ export default function health() {
 
 
                         <div className="bg-white shadow-2xl flex flex-row p-5 rounded-lg">
-                            <div className="bg-blue-400 rounded-full px-1 py-1 bg-opacity-80">
+                            <div className="bg-blue-400 xs:rounded-sm md:rounded-full xs:pt-4 md:pt-2 px-1 py-1 bg-opacity-80">
                                     <AirportShuttleIcon style={{color: "red"}}/>
                                 </div>
                                 <div className="pl-7">
@@ -157,6 +157,12 @@ export default function health() {
 
                  
             </div>
+
+        
+
+            
+
+
 
 
             <div className="shadow-2xl bg-white p-6 rounded-lg">
@@ -219,7 +225,7 @@ export default function health() {
                 <section className="bg-blue-100 bg-opacity-50 p-8 pb-24 mt-6">
                     <div className="flex flex-col justify-center gap-y-4">
                         <div className="bg-white shadow-2xl flex flex-row p-5 rounded-lg">
-                            <div className="bg-blue-400 rounded-full px-1 py-1 bg-opacity-80">
+                            <div className="bg-blue-400 xs:rounded-sm md:rounded-full xs:pt-4 md:pt-2 px-1 py-1 bg-opacity-80">
                                 <Person style={{color: "blue"}}/>
                             </div>
                             <div className="pl-7">
@@ -229,7 +235,7 @@ export default function health() {
                         </div>
 
                         <div className="bg-white shadow-2xl flex flex-row p-5 rounded-lg">
-                                <div className="bg-blue-400 rounded-full px-1 py-1 bg-opacity-80">
+                                <div className="bg-blue-400 xs:rounded-sm md:rounded-full xs:pt-4 md:pt-2 px-1 py-1 bg-opacity-80">
                                     <RedeemIcon style={{color: "blue"}}/>
                                 </div>
 
@@ -241,7 +247,7 @@ export default function health() {
 
 
                         <div className="bg-white shadow-2xl flex flex-row p-5 rounded-lg">
-                            <div className="bg-blue-400 rounded-full px-1 py-1 bg-opacity-80">
+                            <div className="bg-blue-400 xs:rounded-sm md:rounded-full xs:pt-4 md:pt-2 px-1 py-1 bg-opacity-80">
                                     <AirportShuttleIcon style={{color: "red"}}/>
                                 </div>
                                 <div className="pl-7">
@@ -335,8 +341,8 @@ export default function health() {
 
                 <section className="bg-blue-100 bg-opacity-50 p-8 pb-24 mt-6">
                     <div className="flex flex-col justify-center gap-y-4">
-                        <div className="bg-white shadow-2xl flex flex-row p-5 rounded-lg">
-                            <div className="bg-blue-400 rounded-full px-1 py-1 bg-opacity-80">
+                        <div className="bg-white shadow-2xl flex flex-row  p-5 rounded-lg">
+                            <div className="bg-blue-400 xs:rounded-md md:rounded-full xs:pt-4 md:pt-2 px-1 py-1 bg-opacity-80">
                                 <Person style={{color: "blue"}}/>
                             </div>
                             <div className="pl-7">
@@ -346,7 +352,7 @@ export default function health() {
                         </div>
 
                         <div className="bg-white shadow-2xl flex flex-row p-5 rounded-lg">
-                                <div className="bg-blue-400 rounded-full px-1 py-1 bg-opacity-80">
+                                <div className="bg-blue-400 xs:rounded-sm md:rounded-full px-1 py-1 bg-opacity-80">
                                     <RedeemIcon style={{color: "blue"}}/>
                                 </div>
 
@@ -358,7 +364,7 @@ export default function health() {
 
 
                         <div className="bg-white shadow-2xl flex flex-row p-5 rounded-lg">
-                            <div className="bg-blue-400 rounded-full px-1 py-1 bg-opacity-80">
+                            <div className="bg-blue-400 xs:rounded-sm md:rounded-full xs:pt-4 md:pt-2 px-1 py-1 bg-opacity-80">
                                     <AirportShuttleIcon style={{color: "red"}}/>
                                 </div>
                                 <div className="pl-7">

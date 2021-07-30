@@ -5,6 +5,16 @@
     display: flex;
     justify-content: space-between;
     top: 500px;
+
+    @include mobile{
+        
+        
+    }
+
+
+    @include tablet{
+        
+    }
 }
 
 .content{
@@ -13,7 +23,13 @@
 
     @include mobile{
         flex-direction: column;
+        margin-top: 50%;
         
+    }
+
+
+    @include tablet{
+        flex-direction: column;
     }
 }
 
