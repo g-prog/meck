@@ -1,11 +1,12 @@
 import "./health.css"
-import {Notifications, Person, Home, Watch, Minimize} from "@material-ui/icons";
+import {Notifications, Person, Home, Watch, Minimize, Clear} from "@material-ui/icons";
 import WhatshotIcon from '@material-ui/icons/Whatshot';
 import DirectionsWalkIcon from '@material-ui/icons/DirectionsWalk';
 import NightsStayIcon from '@material-ui/icons/NightsStay';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import RedeemIcon from '@material-ui/icons/Redeem';
 import AirportShuttleIcon from '@material-ui/icons/AirportShuttle';
+import CheckCircleIcon from '@material-ui/icons/CheckCircle';
 
 export default function health() {
     return (
@@ -362,6 +363,22 @@ export default function health() {
                                 </div>
                         </div> 
                     </div>
+
+                    <div className="flex flex-row justify-between p-2 mt-3 bg-white shadow-lg">
+                    <div>
+                        <CheckCircleIcon style={{color: "green"}}/>
+
+                    </div>
+                    <div className="flex flex-col pl-2">
+                        <div><h4>Help is on the way</h4></div>
+                        <div>
+                            <p className="text-xs text-gray-400">The Hospital and your next of kin has been notified</p>
+                        </div>
+                    </div>
+                    <div className="pl-4">
+                     <Clear style={{color: "gray"}}/>
+                    </div>
+                </div>
                 </section>
 
                 
@@ -385,13 +402,7 @@ export default function health() {
                     </div>
                 </section>
 
-                <div className="flex flex-row justify-between">
-                    <div>
-
-                    </div>
-                    <div></div>
-                    <div></div>
-                </div>
+                
             </div>
 
 
