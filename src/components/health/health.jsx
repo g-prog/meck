@@ -22,12 +22,12 @@ export default function health() {
                     <p>"Report an Emergency"</p>
                 </div>
                 <div className="pr-12">
-                    <p>on tap</p>
-                    <p>"Report an Emergency"</p>
+                    <p>"Allow Location access"</p>
+                    <p className="pr-14">on 1st time use</p>
                 </div>
-                <div className="pr-20">
-                    <p>on tap</p>
-                    <p>"Report an Emergency"</p>
+                <div className="pr-28">
+                    <p>Double tap sends</p>
+                    <p>toast notification</p>
                 </div>
                 
             </div>
