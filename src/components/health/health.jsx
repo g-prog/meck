@@ -7,6 +7,7 @@ import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import RedeemIcon from '@material-ui/icons/Redeem';
 import AirportShuttleIcon from '@material-ui/icons/AirportShuttle';
 import CheckCircleIcon from '@material-ui/icons/CheckCircle';
+import Box from '@material-ui/core/Box'
 
 export default function health() {
     return (
@@ -137,14 +138,23 @@ export default function health() {
                     </div>
                     
                     <div className="flex flex-col mt-6">
-                        <Watch style={{color: "gray"}} />
+                        <Box ml={2}>
+                            <Watch style={{color: "gray"}} />
+
+                        </Box>
+                        
                         <p className="text-base text-gray-400">TRACK</p>
                     </div>
 
                     <div className="flex flex-col mt-6">
-                        <img className="profile"
-                        src="assets/skin.jpg"
-                        alt="glammed up"/>
+                        <Box ml={2}>
+                            <img className="profile"
+                            src="assets/skin.jpg"
+                            alt="glammed up"/>
+                                
+
+                        </Box>
+                        
                         <p className="text-base text-gray-400">ACCOUNT</p>
                     </div>
                     
@@ -267,14 +277,20 @@ export default function health() {
                     </div>
                     
                     <div className="flex flex-col mt-6">
-                        <Watch style={{color: "gray"}} />
+                        <Box ml={2}>
+                            <Watch style={{color: "gray"}} />
+
+                        </Box>
                         <p className="text-base text-gray-400">TRACK</p>
                     </div>
 
                     <div className="flex flex-col mt-6">
-                        <img className="profile"
-                        src="assets/skin.jpg"
-                        alt="glammed up"/>
+                        <Box ml={2}>
+                            <img className="profile"
+                            src="assets/skin.jpg"
+                            alt="glammed up"/>
+                        
+                        </Box>
                         <p className="text-base text-gray-400">ACCOUNT</p>
                     </div>
                 </section>
@@ -400,14 +416,19 @@ export default function health() {
                     </div>
                     
                     <div className="flex flex-col mt-6">
-                        <Watch style={{color: "gray"}} />
+                        <Box ml={2}>
+                            <Watch style={{color: "gray"}} />
+
+                        </Box>
                         <p className="text-base text-gray-400">TRACK</p>
                     </div>
 
                     <div className="flex flex-col mt-6">
-                        <img className="profile"
-                        src="assets/skin.jpg"
-                        alt="glammed up"/>
+                        <Box ml={2}>
+                            <img className="profile"
+                            src="assets/skin.jpg"
+                            alt="glammed up"/>
+                        </Box>
                         <p className="text-base text-gray-400">ACCOUNT</p>
                     </div>
                 </section>
