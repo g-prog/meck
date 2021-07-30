@@ -13,7 +13,7 @@ export default function health() {
     return (
         <div className="bg-white shadow-2xl">
             <div className="p-12">
-                <h2 className="text-center font-medium">HOW TO REPORT AN EMERGENCY</h2>
+                <h2 className="text-center font-bold">HOW TO REPORT AN EMERGENCY</h2>
 
             </div>
             
@@ -299,7 +299,7 @@ export default function health() {
 
              
 
-            <div className="shadow-2xl bg-white p-6 rounded-lg mt-44 md:mt-0">
+            <div className="shadow-2xl bg-white p-2.5 rounded-lg mt-44 md:mt-0">
                <div className="flex flex-row justify-between">
                     <div>
                         <h1 className="text-blue-600 text-xl">meck</h1>
@@ -390,13 +390,13 @@ export default function health() {
                         </div> 
                     </div>
 
-                    <div className="flex flex-row justify-between p-2 mt-3 bg-white shadow-lg">
+                    <div className="flex flex-row justify-between p-3 mt-3 bg-white shadow-lg">
                     <div>
                         <CheckCircleIcon style={{color: "green"}}/>
 
                     </div>
                     <div className="flex flex-col pl-2">
-                        <div><h4>Help is on the way</h4></div>
+                        <div><h4 className="text-xs font-semibold" >Help is on the way</h4></div>
                         <div>
                             <p className="text-xs text-gray-400">The Hospital and your next of kin has been notified</p>
                         </div>
