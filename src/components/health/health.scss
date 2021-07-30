@@ -1,0 +1,64 @@
+@import "../../global.scss";
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    top: 500px;
+}
+
+.content{
+    display: flex;
+    justify-content: space-around;
+
+    @include mobile{
+        flex-direction: column;
+        
+    }
+}
+
+.calories{
+    border-radius: 50%;
+    padding:4px;
+    font-size: small;
+    border: 2px solid skyblue;
+    border-left-color:#fff;
+    box-shadow: 3px 3px 7px -1px rgba(0,0,0,0.3),
+                -4px -3px 7px -1px rgba(255,255,255,1);
+}
+
+.steps{
+    border-radius: 50%;
+    padding: 4px;
+    border: 2px solid skyblue;
+    border-left-color:#fff;
+    box-shadow: 3px 3px 7px -1px rgba(0,0,0,0.3),
+                -3px -3px 7px -1px rgba(255,255,255,1);
+    
+
+}
+
+.sleep{
+    border-radius: 50%;
+    padding: 4px;
+    border: 2px solid skyblue;
+    border-left-color:#fff;
+    box-shadow: 3px 3px 7px -1px rgba(0,0,0,0.3),
+                -3px -3px 7px -1px rgba(255,255,255,1);
+
+}
+
+.arrow{
+    font-size: 0.73em;
+}
+
+.text{
+    font-size: 0.7em;
+}
+
+.profile{
+    width: 35px;
+    height: 25px;
+    border-radius: 50%;
+}
+

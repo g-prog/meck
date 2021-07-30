@@ -1,4 +1,4 @@
-import "./health.css"
+import "./health.scss"
 import {Notifications, Person, Home, Watch, Minimize, Clear} from "@material-ui/icons";
 import WhatshotIcon from '@material-ui/icons/Whatshot';
 import DirectionsWalkIcon from '@material-ui/icons/DirectionsWalk';
