@@ -276,8 +276,8 @@ export default function health() {
                             </p>
                         </div>
                         <div className="flex flex-row">
-                            <div className="p-2.5"><p className="text-xs">Agree</p></div>
-                            <div className="p-2.5"><p className="text-xs"> Do not agree</p></div>
+                            <div className="p-2.5 border border-gray-400"><p className="text-xs text-blue-700">Agree</p></div>
+                            <div className="p-2.5"><p className="text-xs text-blue-700 pl-14"> Do not agree</p></div>
                         </div>
                     
                     </div>
@@ -314,7 +314,7 @@ export default function health() {
 
                 {/* Third div */}
 
-            <div className="shadow-2xl bg-white p-2.5 rounded-lg mt-44 md:mt-0">
+            <div className="shadow-2xl bg-white p-6 rounded-lg mt-44 md:mt-0">
                <div className="flex flex-row justify-between">
                     <div>
                         <h1 className="text-blue-600 text-xl">meck</h1>
