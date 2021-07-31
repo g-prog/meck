@@ -14,11 +14,10 @@ export default function health() {
         <div className="bg-white shadow-2xl">
             <div className="p-12">
                 <h2 className="text-center font-bold">HOW TO REPORT AN EMERGENCY</h2>
-
             </div>
             
             <div className="header">
-                <div className="flex flex-col p-4 pl-11">
+                <div className="p-4 pl-11">
                     <p >on tap</p>
                     <p>"Report an Emergency"</p>
                 </div>
@@ -26,7 +25,7 @@ export default function health() {
                     <p>"Allow Location access"</p>
                     <p className="pr-14">on 1st time use</p>
                 </div>
-                <div className="pr-28">
+                <div className="mr-28">
                     <p>Double tap sends</p>
                     <p>toast notification</p>
                 </div>
@@ -62,7 +61,7 @@ export default function health() {
                     </div>
                     <div className="steps">
     
-                        <DirectionsWalkIcon/>
+                        <DirectionsWalkIcon />
 
                     </div>
                     <div className="sleep">
@@ -96,8 +95,11 @@ export default function health() {
                 <section className="bg-blue-100 bg-opacity-50 p-8 pb-24 mt-6">
                     <div className="flex flex-col justify-center gap-y-4">
                         <div className="bg-white shadow-2xl flex flex-row p-5 rounded-lg">
-                            <div className="bg-blue-400 xs:rounded-sm md:rounded-full xs:pt-4 md:pt-2 px-1 py-1 bg-opacity-80">
-                                <Person style={{color: "blue"}}/>
+                            <div className="bg-blue-400 xs:rounded-sm md:rounded-full xs:pt-2 md:pt-2 px-1 py-1 bg-opacity-80">
+
+                                <Box pt={0.2} >
+                                    <Person style={{color: "blue"}}/>
+                                </Box>
                             </div>
                             <div className="pl-7">
                                 <p>Get Checked</p> 
@@ -118,8 +120,12 @@ export default function health() {
 
 
                         <div className="bg-white shadow-2xl flex flex-row p-5 rounded-lg">
-                            <div className="bg-blue-400 xs:rounded-sm md:rounded-full xs:pt-4 md:pt-2 px-1 py-1 bg-opacity-80">
-                                    <AirportShuttleIcon style={{color: "red"}}/>
+                            <div className="bg-blue-400 xs:rounded-sm md:rounded-full xs:pt-2 md:pt-2 px-1 py-1 bg-opacity-80">
+                                   
+                                    <Box pt={0.2}>
+                                        <AirportShuttleIcon style={{color: "red"}}/>
+                                        
+                                    </Box>
                                 </div>
                                 <div className="pl-7">
                                     <p>Report  Emergency</p>
@@ -134,7 +140,7 @@ export default function health() {
                     <div className="flex flex-col">
                         <Minimize style={{color: "blue"}} />
                         <Home style={{color: "blue"}} />
-                        <p className="text-base text-blue-700">HOME</p>
+                        <p className="text-sm text-blue-700">HOME</p>
                     </div>
                     
                     <div className="flex flex-col mt-6">
@@ -143,7 +149,7 @@ export default function health() {
 
                         </Box>
                         
-                        <p className="text-base text-gray-400">TRACK</p>
+                        <p className="text-sm text-gray-400">TRACK</p>
                     </div>
 
                     <div className="flex flex-col mt-6">
@@ -212,16 +218,16 @@ export default function health() {
                 <div className="flex flex-row justify-around">
                     <div className="py-2">
                         <p>213</p>
-                        <p className="text-gray-400">Cals</p>
+                        <p className="text-gray-600">Cals</p>
                     </div>
 
                     <div className="py-2">
                         <p className="ml-5">5,022</p>
-                        <p className="text-gray-400 ml-5">Steps</p>
+                        <p className="text-gray-600 ml-5">Steps</p>
                     </div>
                     <div className="py-2 text-center">
                         <p>4Hr55</p>
-                        <p className="text-gray-400">Minutes</p>
+                        <p className="text-gray-600">Minutes</p>
                     </div>
                 </div>
 
@@ -235,8 +241,14 @@ export default function health() {
                 <section className="bg-black bg-opacity-5 p-8 pb-24 mt-6">
                     <div className="flex flex-col justify-center gap-y-4">
                         <div className="bg-black bg-opacity-20 shadow-2xl flex flex-row p-5 rounded-lg">
-                            <div className="bg-blue-400 xs:rounded-sm md:rounded-full xs:pt-4 md:pt-2 px-1 py-1 bg-opacity-80">
-                                <Person style={{color: "blue"}}/>
+                            <div className="bg-blue-400 xs:rounded-sm md:rounded-full xs:pt-2 md:pt-2 px-1 py-1 bg-opacity-80">
+                                
+                                <Box pt={0.2}>
+                                    <Person style={{color: "blue"}}/>
+     
+                                </Box>
+
+                                
                             </div>
                             <div className="pl-7">
                                 <p>Get Checked</p> 
@@ -257,8 +269,13 @@ export default function health() {
 
 
                         <div className="bg-black bg-opacity-20 shadow-2xl flex flex-row p-5 rounded-lg">
-                            <div className="bg-blue-400 xs:rounded-sm md:rounded-full xs:pt-4 md:pt-2 px-1 py-1 bg-opacity-80">
-                                    <AirportShuttleIcon style={{color: "red"}}/>
+                                <div className="bg-blue-400 xs:rounded-sm md:rounded-full xs:pt-2 md:pt-2 px-1 py-1 bg-opacity-80">
+                                    
+                                    <Box pt={0.2}>
+                                        <AirportShuttleIcon style={{color: "red"}}/>
+                                    
+                                    </Box>
+
                                 </div>
                                 <div className="pl-7">
                                     <p>Report  Emergency</p>
@@ -269,15 +286,20 @@ export default function health() {
                         
                     </div>
 
-                    <div className="bg-white z-50 p-7 rounded-lg">
+                    <div className="bg-white z-50 p-3 rounded-lg">
                         <div>
-                            <p className="text-sm font-semibold">Allow "Meck" to access your location 
+                            <p className="text-sm text-center font-semibold">Allow "Meck" to access your location 
                                 <p>while you use the app?</p>
                             </p>
                         </div>
+                        <div>
+                            <p className="text-center text-xs mt-3">Meck helps you get care </p>
+                            <p className="text-center text-xs">even in an emergency</p>
+                        </div>
+                        
                         <div className="flex flex-row">
                             <div className="p-2.5 pt-8"><p className="text-xs text-blue-700">Don't Allow</p></div>
-                            <div className="p-2.5 pt-8"><p className="text-xs text-blue-700 pl-14">Allow</p></div>
+                            <div className="p-2.5 pt-8"><p className="text-xs text-blue-700 pl-20">Allow</p></div>
                         </div>
                     
                     </div>
@@ -288,7 +310,7 @@ export default function health() {
                     <div className="flex flex-col">
                         <Minimize style={{color: "blue"}} />
                         <Home style={{color: "blue"}} />
-                        <p className="text-base text-blue-700">HOME</p>
+                        <p className="text-sm text-blue-700">HOME</p>
                     </div>
                     
                     <div className="flex flex-col mt-6">
@@ -296,7 +318,7 @@ export default function health() {
                             <Watch style={{color: "gray"}} />
 
                         </Box>
-                        <p className="text-base text-gray-400">TRACK</p>
+                        <p className="text-sm text-gray-400">TRACK</p>
                     </div>
 
                     <div className="flex flex-col mt-6">
@@ -374,7 +396,10 @@ export default function health() {
                     <div className="flex flex-col justify-center gap-y-4">
                         <div className="bg-white shadow-2xl flex flex-row  p-5 rounded-lg">
                             <div className="bg-blue-400 xs:rounded-md md:rounded-full xs:pt-4 md:pt-2 px-1 py-1 bg-opacity-80">
-                                <Person style={{color: "blue"}}/>
+                                
+                                <Box pt={0.2}>
+                                    <Person style={{color: "blue"}}/> 
+                                </Box>
                             </div>
                             <div className="pl-7">
                                 <p>Get Checked</p> 
@@ -396,7 +421,11 @@ export default function health() {
 
                         <div className="bg-white shadow-2xl flex flex-row p-5 rounded-lg">
                             <div className="bg-blue-400 xs:rounded-sm md:rounded-full xs:pt-4 md:pt-2 px-1 py-1 bg-opacity-80">
-                                    <AirportShuttleIcon style={{color: "red"}}/>
+                                    
+                                    <Box pt={0.2}>
+                                        <AirportShuttleIcon style={{color: "red"}}/>
+                                        
+                                    </Box>
                                 </div>
                                 <div className="pl-7">
                                     <p>Report  Emergency</p>
@@ -428,7 +457,7 @@ export default function health() {
                     <div className="flex flex-col">
                         <Minimize style={{color: "blue"}} />
                         <Home style={{color: "blue"}} />
-                        <p className="text-base text-blue-700">HOME</p>
+                        <p className="text-sm text-blue-700">HOME</p>
                     </div>
                     
                     <div className="flex flex-col mt-6">
@@ -436,7 +465,7 @@ export default function health() {
                             <Watch style={{color: "gray"}} />
 
                         </Box>
-                        <p className="text-base text-gray-400">TRACK</p>
+                        <p className="text-sm text-gray-400">TRACK</p>
                     </div>
 
                     <div className="flex flex-col mt-6">
