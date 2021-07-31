@@ -276,8 +276,8 @@ export default function health() {
                             </p>
                         </div>
                         <div className="flex flex-row">
-                            <div className="p-2.5"><p className="text-xs text-blue-700">Don't Allow</p></div>
-                            <div className="p-2.5"><p className="text-xs text-blue-700 pl-14">Allow</p></div>
+                            <div className="p-2.5 pt-8"><p className="text-xs text-blue-700">Don't Allow</p></div>
+                            <div className="p-2.5 pt-8"><p className="text-xs text-blue-700 pl-14">Allow</p></div>
                         </div>
                     
                     </div>
@@ -411,7 +411,7 @@ export default function health() {
 
                     </div>
                     <div className="flex flex-col pl-2">
-                        <div><h4 className="text-xs font-semibold" >Help is on the way</h4></div>
+                        <div><h4 className="text-xs font-semibold" >Help is on the way!</h4></div>
                         <div>
                             <p className="text-xs text-gray-400">The Hospital and your </p>
                             <p className="text-xs text-gray-400">next of kin has been notified</p> 
