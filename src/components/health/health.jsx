@@ -240,7 +240,7 @@ export default function health() {
                             </div>
                             <div className="pl-7">
                                 <p>Get Checked</p> 
-                                <p className="text-xs text-gray-400">Take the virtual assessment</p>
+                                <p className="text-xs text-gray-600">Take the virtual assessment</p>
                             </div>
                         </div>
 
@@ -251,7 +251,7 @@ export default function health() {
 
                                 <div className="pl-7">
                                     <p>See a Doctor</p>
-                                    <p className="text-xs text-gray-400">Book an appointment</p>
+                                    <p className="text-xs text-gray-600">Book an appointment</p>
                                 </div>
                         </div>
 
@@ -262,7 +262,7 @@ export default function health() {
                                 </div>
                                 <div className="pl-7">
                                     <p>Report  Emergency</p>
-                                    <p className="text-xs text-gray-400">Tap twice to alert the hospital </p>
+                                    <p className="text-xs text-gray-600">Tap twice to alert the hospital </p>
                                 </div>
                         </div> 
 
