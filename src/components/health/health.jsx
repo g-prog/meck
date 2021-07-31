@@ -269,15 +269,15 @@ export default function health() {
                         
                     </div>
 
-                    <div className="bg-white z-50 p-3.5">
+                    <div className="bg-white z-50 p-7 rounded-lg">
                         <div>
                             <p className="text-sm font-semibold">Allow "Meck" to access your location 
                                 <p>while you use the app?</p>
                             </p>
                         </div>
                         <div className="flex flex-row">
-                            <div className="p-2.5 border border-gray-400"><p className="text-xs text-blue-700">Agree</p></div>
-                            <div className="p-2.5"><p className="text-xs text-blue-700 pl-14"> Do not agree</p></div>
+                            <div className="p-2.5"><p className="text-xs text-blue-700">Don't Allow</p></div>
+                            <div className="p-2.5"><p className="text-xs text-blue-700 pl-14">Allow</p></div>
                         </div>
                     
                     </div>
