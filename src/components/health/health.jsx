@@ -265,6 +265,21 @@ export default function health() {
                                     <p className="text-xs text-gray-400">Tap twice to alert the hospital </p>
                                 </div>
                         </div> 
+
+                        
+                    </div>
+
+                    <div className="bg-white z-50 p-3.5">
+                        <div>
+                            <p className="text-sm font-semibold">Allow "Meck" to access your location 
+                                <p>while you use the app?</p>
+                            </p>
+                        </div>
+                        <div className="flex flex-row">
+                            <div className="p-2.5"><p className="text-xs">Agree</p></div>
+                            <div className="p-2.5"><p className="text-xs"> Do not agree</p></div>
+                        </div>
+                    
                     </div>
                 </section>
 
@@ -398,7 +413,8 @@ export default function health() {
                     <div className="flex flex-col pl-2">
                         <div><h4 className="text-xs font-semibold" >Help is on the way</h4></div>
                         <div>
-                            <p className="text-xs text-gray-400">The Hospital and your next of kin has been notified</p>
+                            <p className="text-xs text-gray-400">The Hospital and your </p>
+                            <p className="text-xs text-gray-400">next of kin has been notified</p> 
                         </div>
                     </div>
                     <div className="pl-4">
