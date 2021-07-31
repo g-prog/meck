@@ -34,7 +34,7 @@ export default function health() {
             </div>
 
             
-
+                {/* First div */}
             <div className="content">
             <div className="shadow-2xl bg-white p-6 rounded-lg ">
                <div className="flex flex-row justify-between">
@@ -173,9 +173,9 @@ export default function health() {
             
 
 
+                {/* Second div */}
 
-
-            <div className="shadow-2xl bg-white p-6 rounded-lg mt-44 md:mt-0">
+            <div className="shadow-2xl bg-black bg-opacity-20 p-6 rounded-lg mt-44 md:mt-0">
                <div className="flex flex-row justify-between">
                     <div>
                         <h1 className="text-blue-600 text-xl">meck</h1>
@@ -225,16 +225,16 @@ export default function health() {
                     </div>
                 </div>
 
-
+              
 
                 <div className="flex flex-row justify-center">
                     <p className="text-gray-500">More <span className="arrow"><ArrowForwardIosIcon style={{fontSize : 10}}/></span> </p>
                 </div>
                 <h3>Services</h3>
 
-                <section className="bg-blue-100 bg-opacity-50 p-8 pb-24 mt-6">
+                <section className="bg-black bg-opacity-5 p-8 pb-24 mt-6">
                     <div className="flex flex-col justify-center gap-y-4">
-                        <div className="bg-white shadow-2xl flex flex-row p-5 rounded-lg">
+                        <div className="bg-black bg-opacity-20 shadow-2xl flex flex-row p-5 rounded-lg">
                             <div className="bg-blue-400 xs:rounded-sm md:rounded-full xs:pt-4 md:pt-2 px-1 py-1 bg-opacity-80">
                                 <Person style={{color: "blue"}}/>
                             </div>
@@ -244,7 +244,7 @@ export default function health() {
                             </div>
                         </div>
 
-                        <div className="bg-white shadow-2xl flex flex-row p-5 rounded-lg">
+                        <div className="bg-black bg-opacity-20 shadow-2xl flex flex-row p-5 rounded-lg">
                                 <div className="bg-blue-400 xs:rounded-sm md:rounded-full xs:pt-4 md:pt-2 px-1 py-1 bg-opacity-80">
                                     <RedeemIcon style={{color: "blue"}}/>
                                 </div>
@@ -256,7 +256,7 @@ export default function health() {
                         </div>
 
 
-                        <div className="bg-white shadow-2xl flex flex-row p-5 rounded-lg">
+                        <div className="bg-black bg-opacity-20 shadow-2xl flex flex-row p-5 rounded-lg">
                             <div className="bg-blue-400 xs:rounded-sm md:rounded-full xs:pt-4 md:pt-2 px-1 py-1 bg-opacity-80">
                                     <AirportShuttleIcon style={{color: "red"}}/>
                                 </div>
@@ -297,7 +297,7 @@ export default function health() {
             </div>
 
 
-             
+                {/* Third div */}
 
             <div className="shadow-2xl bg-white p-2.5 rounded-lg mt-44 md:mt-0">
                <div className="flex flex-row justify-between">
