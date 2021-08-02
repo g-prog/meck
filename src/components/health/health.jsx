@@ -1,3 +1,5 @@
+import { useRef } from 'react';
+import useDoubleClick from 'use-double-click';
 import "./health.scss"
 import {Notifications, Person, Home, Watch, Minimize, Clear} from "@material-ui/icons";
 import WhatshotIcon from '@material-ui/icons/Whatshot';
@@ -8,8 +10,89 @@ import RedeemIcon from '@material-ui/icons/Redeem';
 import AirportShuttleIcon from '@material-ui/icons/AirportShuttle';
 import CheckCircleIcon from '@material-ui/icons/CheckCircle';
 import Box from '@material-ui/core/Box'
+import { toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
+const Button = () => {
+    const buttonRef = useRef();
+    
+    useDoubleClick({
+      onSingleClick: e => {
+        console.log(e, 'single click');
+      },
+      onDoubleClick: e => {
+        console.log(e, 'double click');
+      },
+      ref: buttonRef,
+      latency: 250
+    });
+    
+    return <button ref={buttonRef}>Click Me</button>
+  }
+
+const HelpToast = ( closeToast ) => {
+    return(
+        <div className="flex flex-row justify-between p-3 mt-3 bg-white shadow-lg">
+            
+            <div>
+                <Box pt={0.2}>
+                    <CheckCircleIcon style={{color:"green"}}/>
+                </Box>
+            </div>
+            <div className="flex flex-col pl-1">
+                <div><h4 className="text-xs text-black font-semibold text-center" >Help is on the way!</h4></div>
+                <div>
+                    <p className="text-xs text-black text-center">The Hospital and your </p>
+                    <p className="text-xs text-black text-center">next of kin has been notified</p> 
+                </div>
+            </div>
+            <div></div>
+        
+        </div>
+
+
+        
+        
+
+    )
+}
+
+const AllowAccess = ( closeToast ) => {
+    return(
+        <div className="bg-white z-50 p-3 rounded-lg">
+            <div>
+                <p className="text-sm text-center text-black font-semibold">Allow "Meck" to access your location 
+                    <p>while you use the app?</p>
+                </p>
+            </div>
+            <div>
+                <p className="text-center text-black text-xs mt-3">Meck helps you get care </p>
+                <p className="text-center text-xs text-black">even in an emergency</p>
+            </div>
+            <div className="flex flex-row">
+                <div className="p-2.5 pt-8"><p className="text-xs text-blue-500">Don't Allow</p></div>
+                <div className="p-2.5 pt-8"><p className="text-xs text-blue-500 pl-20">Allow</p></div>
+               
+            </div>
+        
+        </div>
+        
+       
+    
+
+    )
+}
+toast.configure()
 export default function health() {
+    const notify = () => {
+        toast.success(<HelpToast/>, {position: toast.POSITION.BOTTOM_LEFT, autoClose: false} )
+    }
+
+    const Allow = () => {
+        toast.success(<AllowAccess/>, {position: toast.POSITION.BOTTOM_LEFT, autoClose: false} )
+    }
+
+
     return (
         <div className="bg-white shadow-2xl">
             <div className="p-12">
@@ -35,7 +118,7 @@ export default function health() {
             
                 {/* First div */}
             <div className="content">
-            <div className="shadow-2xl bg-white p-6 rounded-lg ">
+            <div className="shadow-2xl bg-white p-6 rounded-lg">
                <div className="flex flex-row justify-between">
                     <div>
                         <h1 className="text-blue-600 text-xl">meck</h1>
@@ -101,6 +184,7 @@ export default function health() {
                                     <Person style={{color: "blue"}}/>
                                 </Box>
                             </div>
+
                             <div className="pl-7">
                                 <p>Get Checked</p> 
                                 <p className="text-xs text-gray-400">Take the virtual assessment</p>
@@ -119,7 +203,7 @@ export default function health() {
                         </div>
 
 
-                        <div className="bg-white shadow-2xl flex flex-row p-5 rounded-lg">
+                        <div className="bg-white shadow-2xl flex flex-row p-5 rounded-lg" onClick={Allow} onDoubleClick={notify}>
                             <div className="bg-blue-400 xs:rounded-sm md:rounded-full xs:pt-2 md:pt-2 px-1 py-1 bg-opacity-80">
                                    
                                     <Box pt={0.2}>
@@ -127,9 +211,12 @@ export default function health() {
                                         
                                     </Box>
                                 </div>
+
                                 <div className="pl-7">
                                     <p>Report  Emergency</p>
-                                    <p className="text-xs text-gray-400">Tap twice to alert the hospital </p>
+                                    
+                                    <button onClick={Allow} onDoubleClick={notify}><p className="text-xs text-gray-400">Tap twice to alert the hospital </p></button>
+                                    
                                 </div>
                         </div> 
                     </div>
@@ -157,8 +244,6 @@ export default function health() {
                             <img className="profile"
                             src="assets/skin.jpg"
                             alt="glammed up"/>
-                                
-
                         </Box>
                         
                         <p className="text-base text-gray-400">ACCOUNT</p>
@@ -181,7 +266,7 @@ export default function health() {
 
                 {/* Second div */}
 
-            <div className="shadow-2xl bg-black bg-opacity-20 p-6 rounded-lg mt-44 md:mt-0">
+            <div className="shadow-2xl bg-white p-6 rounded-lg mt-44 md:mt-0">
                <div className="flex flex-row justify-between">
                     <div>
                         <h1 className="text-blue-600 text-xl">meck</h1>
@@ -240,7 +325,7 @@ export default function health() {
 
                 <section className="bg-black bg-opacity-5 p-8 pb-24 mt-6">
                     <div className="flex flex-col justify-center gap-y-4">
-                        <div className="bg-black bg-opacity-20 shadow-2xl flex flex-row p-5 rounded-lg">
+                        <div className="bg-white  shadow-2xl flex flex-row p-5 rounded-lg">
                             <div className="bg-blue-400 xs:rounded-sm md:rounded-full xs:pt-2 md:pt-2 px-1 py-1 bg-opacity-80">
                                 
                                 <Box pt={0.2}>
@@ -256,7 +341,7 @@ export default function health() {
                             </div>
                         </div>
 
-                        <div className="bg-black bg-opacity-20 shadow-2xl flex flex-row p-5 rounded-lg">
+                        <div className="bg-white  shadow-2xl flex flex-row p-5 rounded-lg">
                                 <div className="bg-blue-400 xs:rounded-sm md:rounded-full xs:pt-4 md:pt-2 px-1 py-1 bg-opacity-80">
                                     <RedeemIcon style={{color: "blue"}}/>
                                 </div>
@@ -268,7 +353,7 @@ export default function health() {
                         </div>
 
 
-                        <div className="bg-black bg-opacity-20 shadow-2xl flex flex-row p-5 rounded-lg">
+                        <div className="bg-white shadow-2xl flex flex-row p-5 rounded-lg " onClick={Allow} onDoubleClick={notify}>
                                 <div className="bg-blue-400 xs:rounded-sm md:rounded-full xs:pt-2 md:pt-2 px-1 py-1 bg-opacity-80">
                                     
                                     <Box pt={0.2}>
@@ -279,30 +364,15 @@ export default function health() {
                                 </div>
                                 <div className="pl-7">
                                     <p>Report  Emergency</p>
-                                    <p className="text-xs text-gray-600">Tap twice to alert the hospital </p>
+                                    <button onClick={Allow} onDoubleClick={notify}><p className="text-xs text-gray-400">Tap twice to alert the hospital </p></button>
+                                    
                                 </div>
                         </div> 
 
                         
                     </div>
 
-                    <div className="bg-white z-50 p-3 rounded-lg">
-                        <div>
-                            <p className="text-sm text-center font-semibold">Allow "Meck" to access your location 
-                                <p>while you use the app?</p>
-                            </p>
-                        </div>
-                        <div>
-                            <p className="text-center text-xs mt-3">Meck helps you get care </p>
-                            <p className="text-center text-xs">even in an emergency</p>
-                        </div>
-                        
-                        <div className="flex flex-row">
-                            <div className="p-2.5 pt-8"><p className="text-xs text-blue-700">Don't Allow</p></div>
-                            <div className="p-2.5 pt-8"><p className="text-xs text-blue-700 pl-20">Allow</p></div>
-                        </div>
                     
-                    </div>
                 </section>
 
                 
@@ -419,7 +489,7 @@ export default function health() {
                         </div>
 
 
-                        <div className="bg-white shadow-2xl flex flex-row p-5 rounded-lg">
+                        <div className="bg-white shadow-2xl flex flex-row p-5 rounded-lg" onClick={Allow} onDoubleClick={notify}>
                             <div className="bg-blue-400 xs:rounded-sm md:rounded-full xs:pt-4 md:pt-2 px-1 py-1 bg-opacity-80">
                                     
                                     <Box pt={0.2}>
@@ -429,27 +499,13 @@ export default function health() {
                                 </div>
                                 <div className="pl-7">
                                     <p>Report  Emergency</p>
-                                    <p className="text-xs text-gray-400">Tap twice to alert the hospital </p>
+                                    <button onClick={Allow} onDoubleClick={notify}><p className="text-xs text-gray-400">Tap twice to alert the hospital </p></button>
+                                    
                                 </div>
                         </div> 
                     </div>
 
-                    <div className="flex flex-row justify-between p-3 mt-3 bg-white shadow-lg">
-                    <div>
-                        <CheckCircleIcon style={{color: "green"}}/>
-
-                    </div>
-                    <div className="flex flex-col pl-2">
-                        <div><h4 className="text-xs font-semibold" >Help is on the way!</h4></div>
-                        <div>
-                            <p className="text-xs text-gray-400">The Hospital and your </p>
-                            <p className="text-xs text-gray-400">next of kin has been notified</p> 
-                        </div>
-                    </div>
-                    <div className="pl-4">
-                     <Clear style={{color: "gray"}}/>
-                    </div>
-                </div>
+                    
                 </section>
 
                 
