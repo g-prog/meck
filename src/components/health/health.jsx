@@ -1,7 +1,6 @@
-import { useRef } from 'react';
-import useDoubleClick from 'use-double-click';
+
 import "./health.scss"
-import {Notifications, Person, Home, Watch, Minimize, Clear} from "@material-ui/icons";
+import {Notifications, Person, Home, Watch, Minimize, } from "@material-ui/icons";
 import WhatshotIcon from '@material-ui/icons/Whatshot';
 import DirectionsWalkIcon from '@material-ui/icons/DirectionsWalk';
 import NightsStayIcon from '@material-ui/icons/NightsStay';
@@ -13,22 +12,7 @@ import Box from '@material-ui/core/Box'
 import { toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 
-const Button = () => {
-    const buttonRef = useRef();
-    
-    useDoubleClick({
-      onSingleClick: e => {
-        console.log(e, 'single click');
-      },
-      onDoubleClick: e => {
-        console.log(e, 'double click');
-      },
-      ref: buttonRef,
-      latency: 250
-    });
-    
-    return <button ref={buttonRef}>Click Me</button>
-  }
+
 
 const HelpToast = ( closeToast ) => {
     return(
