@@ -59,7 +59,7 @@ export default function Health() {
     return (
         <div className="bg-white shadow-2xl">
             <div className="location">
-                <h1>{location.loaded ? JSON.stringify(location): "."}</h1>
+                <h1 className="block">{location.loaded ? JSON.stringify(location): "."}</h1>
             </div>
     
             <div className="p-12">
