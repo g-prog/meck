@@ -1,5 +1,5 @@
-
-import "./health.scss"
+import React from 'react';
+import "./health.scss";
 import {Notifications, Person, Home, Watch, Minimize, } from "@material-ui/icons";
 import WhatshotIcon from '@material-ui/icons/Whatshot';
 import DirectionsWalkIcon from '@material-ui/icons/DirectionsWalk';
@@ -11,6 +11,13 @@ import CheckCircleIcon from '@material-ui/icons/CheckCircle';
 import Box from '@material-ui/core/Box'
 import { toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+import useGeoLocation from "../hook/useGeoLocation";
+
+
+  
+
+
+
 
 
 
@@ -41,64 +48,26 @@ const HelpToast = ( closeToast ) => {
     )
 }
 
-const AllowAccess = ( closeToast ) => {
-    return(
-        <div className="bg-white z-50 p-3 rounded-lg">
-            <div>
-                <p className="text-sm text-center text-black font-semibold">Allow "Meck" to access your location 
-                    <p>while you use the app?</p>
-                </p>
-            </div>
-            <div>
-                <p className="text-center text-black text-xs mt-3">Meck helps you get care </p>
-                <p className="text-center text-xs text-black">even in an emergency</p>
-            </div>
-            <div className="flex flex-row">
-                <div className="p-2.5 pt-8"><p className="text-xs text-blue-500">Don't Allow</p></div>
-                <div className="p-2.5 pt-8"><p className="text-xs text-blue-500 pl-20">Allow</p></div>
-               
-            </div>
-        
-        </div>
-        
-       
-    
 
-    )
-}
 toast.configure()
-export default function health() {
+export default function Health() {
     const notify = () => {
         toast.success(<HelpToast/>, {position: toast.POSITION.BOTTOM_LEFT, autoClose: false} )
     }
-
-    const Allow = () => {
-        toast.success(<AllowAccess/>, {position: toast.POSITION.BOTTOM_LEFT, autoClose: false} )
-    }
-
+    const location = useGeoLocation();
 
     return (
         <div className="bg-white shadow-2xl">
+            <div className="location">
+                <h1>{location.loaded ? JSON.stringify(location): "."}</h1>
+            </div>
+    
             <div className="p-12">
                 <h2 className="text-center font-bold">HOW TO REPORT AN EMERGENCY</h2>
             </div>
-            
-            <div className="header">
-                <div className="p-4 pl-11">
-                    <p >on tap</p>
-                    <p>"Report an Emergency"</p>
-                </div>
-                <div className="pr-12">
-                    <p>"Allow Location access"</p>
-                    <p className="pr-14">on 1st time use</p>
-                </div>
-                <div className="mr-28">
-                    <p>Double tap sends</p>
-                    <p>toast notification</p>
-                </div>
-                
-            </div>
+            <div>
 
+        </div>
             
                 {/* First div */}
             <div className="content">
@@ -159,6 +128,10 @@ export default function health() {
                 </div>
                 <h3>Services</h3>
 
+                <section>
+
+                </section>
+
                 <section className="bg-blue-100 bg-opacity-50 p-8 pb-24 mt-6">
                     <div className="flex flex-col justify-center gap-y-4">
                         <div className="bg-white shadow-2xl flex flex-row p-5 rounded-lg">
@@ -187,7 +160,7 @@ export default function health() {
                         </div>
 
 
-                        <div className="bg-white shadow-2xl flex flex-row p-5 rounded-lg" onClick={Allow} onDoubleClick={notify}>
+                        <div className="bg-white shadow-2xl flex flex-row p-5 rounded-lg"  onDoubleClick={notify}>
                             <div className="bg-blue-400 xs:rounded-sm md:rounded-full xs:pt-2 md:pt-2 px-1 py-1 bg-opacity-80">
                                    
                                     <Box pt={0.2}>
@@ -199,7 +172,7 @@ export default function health() {
                                 <div className="pl-7">
                                     <p>Report  Emergency</p>
                                     
-                                    <button onClick={Allow} onDoubleClick={notify}><p className="text-xs text-gray-400">Tap twice to alert the hospital </p></button>
+                                    <button><p className="text-xs text-gray-400">Tap twice to alert the hospital </p></button>
                                     
                                 </div>
                         </div> 
@@ -337,7 +310,7 @@ export default function health() {
                         </div>
 
 
-                        <div className="bg-white shadow-2xl flex flex-row p-5 rounded-lg " onClick={Allow} onDoubleClick={notify}>
+                        <div className="bg-white shadow-2xl flex flex-row p-5 rounded-lg " onDoubleClick={notify}>
                                 <div className="bg-blue-400 xs:rounded-sm md:rounded-full xs:pt-2 md:pt-2 px-1 py-1 bg-opacity-80">
                                     
                                     <Box pt={0.2}>
@@ -348,7 +321,7 @@ export default function health() {
                                 </div>
                                 <div className="pl-7">
                                     <p>Report  Emergency</p>
-                                    <button onClick={Allow} onDoubleClick={notify}><p className="text-xs text-gray-400">Tap twice to alert the hospital </p></button>
+                                    <button><p className="text-xs text-gray-400">Tap twice to alert the hospital </p></button>
                                     
                                 </div>
                         </div> 
@@ -473,7 +446,7 @@ export default function health() {
                         </div>
 
 
-                        <div className="bg-white shadow-2xl flex flex-row p-5 rounded-lg" onClick={Allow} onDoubleClick={notify}>
+                        <div className="bg-white shadow-2xl flex flex-row p-5 rounded-lg" onDoubleClick={notify}>
                             <div className="bg-blue-400 xs:rounded-sm md:rounded-full xs:pt-4 md:pt-2 px-1 py-1 bg-opacity-80">
                                     
                                     <Box pt={0.2}>
@@ -483,7 +456,7 @@ export default function health() {
                                 </div>
                                 <div className="pl-7">
                                     <p>Report  Emergency</p>
-                                    <button onClick={Allow} onDoubleClick={notify}><p className="text-xs text-gray-400">Tap twice to alert the hospital </p></button>
+                                    <button><p className="text-xs text-gray-400">Tap twice to alert the hospital </p></button>
                                     
                                 </div>
                         </div> 
@@ -528,8 +501,10 @@ export default function health() {
 
             
             </div>
-            
 
+
+
+            
 
             
         </div>
