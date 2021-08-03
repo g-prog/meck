@@ -1,5 +1,5 @@
 import './index.css'
-import Health from './components/health/Health'
+import Health from './components/health/health'
 import Trial from './components/trial/trial'
 
 
