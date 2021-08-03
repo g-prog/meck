@@ -9,11 +9,7 @@ const App = () => {
     <div className="App">
       <Health/>
       <Trial/>
-      <button onClick={getLocation}>Get Location</button>
-      <h1>Coordinates</h1>
-      <p>{status}</p>
-      {lat && <p>Latitude: {lat}</p>}
-      {lng && <p>Longitude: {lng}</p>}
+      
     </div>
   );
 }
