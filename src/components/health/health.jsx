@@ -137,11 +137,11 @@ export default function Health() {
                 
 
                 <section className="bg-blue-300 bg-opacity-5 border-opacity-0 border-2 border-blue-100 p-10 pb-24 mt-6">
-                    <div className="flex flex-col  justify-center gap-y-7 md:gap-y-4">
+                    <div className="flex flex-col  justify-center gap-y-4">
                         <div className="bg-white  border-2 border-blue-300 border-opacity-50 shadow-2xl flex flex-row p-5 rounded-lg">
-                            <div className="bg-blue-400  xs:rounded-sm md:rounded-full xs:pt-2 md:pt-2 px-1 py-1 bg-opacity-40">
+                            <div className="bg-blue-400  xs:rounded-full md:rounded-full xs:pt-2 md:pt-2 px-1 py-1 bg-opacity-40">
 
-                                <Box pt={0.2} >
+                                <Box pt={0.4} >
                                     <Person style={{color: "blue"}}/>
                                 </Box>
                             </div>
@@ -164,10 +164,10 @@ export default function Health() {
                         </div>
 
 
-                        <div className="bg-white border-2 border-blue-300 border-opacity-50 shadow-2xl flex flex-row p-5 rounded-lg"  onDoubleClick={notify}>
-                            <div className="bg-blue-400 xs:rounded-sm md:rounded-full xs:pt-2 md:pt-2 px-1 py-1 bg-opacity-40">
+                        <div className="bg-white border-2 border-blue-300 border-opacity-50 shadow-2xl flex flex-row p-5 rounded-lg xs:"  onDoubleClick={notify}>
+                            <div className="bg-blue-400 xs:rounded-3xl  md:rounded-2xl  md:pt-2 px-1 py-0 pb-0 bg-opacity-40">
                                    
-                                    <Box pt={0.2}>
+                                    <Box pt={0.4}>
                                         <AirportShuttleIcon style={{color: "red"}}/>
                                         
                                     </Box>
@@ -176,7 +176,7 @@ export default function Health() {
                                 <div className="pl-7">
                                     <p>Report  Emergency</p>
                                     
-                                    <button><p className="text-xs text-gray-400 text-center">Tap twice to alert the hospital </p></button>
+                                    <p className="text-xs text-gray-400 ">Tap twice to alert the Hospital </p>
                                     
                                 </div>
                         </div> 
