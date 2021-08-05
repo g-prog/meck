@@ -205,7 +205,7 @@ export default function Health() {
                         
                         
                         
-                        <Box>
+                        <Box ml={2}>
                             <Watch style={{color: toggle ? 'blue' : 'gray'}} onClick={toggleButton} />
 
                         </Box>
@@ -219,7 +219,7 @@ export default function Health() {
                         show?<Minimize style={{color: "blue"}} />:null
                     }
                         
-                        <Box>
+                        <Box ml={2}>
                             <img className="profile"
                             src="assets/skin.jpg"
                             alt="glammed up"/>
