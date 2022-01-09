@@ -173,7 +173,7 @@ export default function Health() {
                                     </Box>
                                 </div>
 
-                                <div className="pl-7 mt-2">
+                                <div className="pl-7 mt-4">
                                     <p>Report  Emergency</p>
                                     
                                     <p className="text-xs text-gray-400 ">Tap twice to alert the Hospital </p>
