@@ -138,7 +138,7 @@ export default function Health() {
 
                 <section className="bg-blue-300 bg-opacity-5 border-opacity-0 border-2 border-blue-100 p-10 pb-24 mt-6">
                     <div className="flex flex-col  justify-center gap-y-4">
-                        <div className="bg-white  border-2 border-blue-300 border-opacity-50 shadow-2xl flex flex-row p-2 rounded-lg">
+                        <div className="bg-white  border-2 border-blue-300 border-opacity-50 shadow-2xl flex flex-row p-2 rounded-lg mt-4">
                             <div className="bg-blue-400 rounded-full xs:pt-2 mb-3  px-1 py-1 bg-opacity-40">
 
                                 <Box pt={0.4} >
@@ -152,7 +152,7 @@ export default function Health() {
                             </div>
                         </div>
 
-                        <div className="bg-white border-2 border-blue-300 border-opacity-50  shadow-2xl flex flex-row p-2 rounded-lg">
+                        <div className="bg-white border-2 border-blue-300 border-opacity-50  shadow-2xl flex flex-row p-2 rounded-lg mt-4">
                                 <div className="bg-blue-400 xs:rounded-sm rounded-full mb-3 px-1 py-1 bg-opacity-40">
                                     <RedeemIcon style={{color: "blue"}}/>
                                 </div>
@@ -164,7 +164,7 @@ export default function Health() {
                         </div>
 
 
-                        <div className="bg-white border-2 border-blue-300 border-opacity-50 shadow-2xl flex flex-row p-2 rounded-lg xs:"  onDoubleClick={notify}>
+                        <div className="bg-white border-2 border-blue-300 border-opacity-50 shadow-2xl flex flex-row p-2 rounded-lg mt-4"  onDoubleClick={notify}>
                             <div className="bg-blue-400   rounded-2xl md:mt-2 mt-6 mb-3 px-1 py-0 pb-0 bg-opacity-40">
                                    
                                     <Box pt={0.6}>
